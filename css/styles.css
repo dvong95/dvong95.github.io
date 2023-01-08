@@ -311,6 +311,10 @@ footer {
 		width: 250px;
 		height: 250px;
 	}
+	
+	#contacts {
+		font-size: 3rem;
+	}
 }
 
 /* @media screen and (max-width: 1500px) {
