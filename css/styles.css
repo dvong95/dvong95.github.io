@@ -295,13 +295,13 @@ footer {
 
 /********************* MEDIA QUERY *********************/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 	.basic, .intermediate, .learning,
 	.languages {
 		display: none;
 	}
 	
-	.project-tiles {
+	.project-tile {
 		width: 400px;
 	}
 }
