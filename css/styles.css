@@ -180,8 +180,8 @@ body {
     content: "";
     background: url("/images/icon.png") no-repeat;
     background-size: contain;
-    width: 50px;
-    height: 50px;
+    width: 2rem;
+    height: 2rem;
     position: fixed;
     left: 0;
 }
@@ -326,6 +326,18 @@ footer {
 	#profile-img {
 		width: 120px;
 		height: 120px;
+	}
+	
+	#navbar::before {
+		display: none;
+	}
+	
+	#projects {
+		padding-bottom: 50px;
+	}
+	
+	#projects h3 {
+		font-size: 3.5rem;
 	}
 	
 	.project-img {
