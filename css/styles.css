@@ -318,10 +318,20 @@ footer {
 	}
 }
 
-@media screen and (max-height: 480px) {
+@media screen and (max-width: 480px), (orientation: landscape) {
 	.basic, .intermediate, .learning,
 	.languages {
 		display: none;
+	}
+	
+	.project-img {
+		width: 200px;
+	}
+	
+	.project-tile {
+		border: none;
+		width: 250px;
+		height: 250px;
 	}
 	
 	.project-tile {
