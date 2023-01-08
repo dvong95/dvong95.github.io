@@ -241,7 +241,7 @@ figure img {
 }
 
 .project-img {
-    width: 400px;
+    max-width: 400px;
 }
 
 .project-link {
@@ -295,7 +295,7 @@ footer {
 
 /********************* MEDIA QUERY *********************/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
 	.basic, .intermediate, .learning,
 	.languages {
 		display: none;
@@ -303,6 +303,7 @@ footer {
 	
 	.project-tile {
 		width: 400px;
+		height: 400px;
 	}
 }
 
