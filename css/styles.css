@@ -318,28 +318,6 @@ footer {
 	}
 }
 
-@media handheld and (max-width: 480px), 
-	handheld and (orientation: landscape) {
-	.basic, .intermediate, .learning,
-	.languages {
-		display: none;
-	}
-	
-	.project-img {
-		width: 200px;
-	}
-	
-	.project-tile {
-		border: none;
-		width: 250px;
-		height: 250px;
-	}
-	
-	.project-tile {
-		border: none;
-	}
-}
-
 /* @media screen and (max-width: 1500px) {
     #projects {
         grid-template-columns: repeat(2, 1fr);
