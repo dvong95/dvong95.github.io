@@ -355,7 +355,7 @@ footer {
 	}
 }
 
-@media screen and (max-height: 480px; {
+@media screen and (max-height: 480px) {
 		.basic, .intermediate, .learning,
 	.languages {
 		display: none;
