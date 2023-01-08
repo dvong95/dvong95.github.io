@@ -308,12 +308,24 @@ footer {
 	}
 	
 	.project-tile {
+		border: none;
 		width: 250px;
 		height: 250px;
 	}
 	
 	#contacts {
 		font-size: 3rem;
+	}
+}
+
+@media screen and (max-height: 480px) {
+	.basic, .intermediate, .learning,
+	.languages {
+		display: none;
+	}
+	
+	.project-tile {
+		border: none;
 	}
 }
 
