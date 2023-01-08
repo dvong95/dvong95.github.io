@@ -1,0 +1,311 @@
+/*************** CSS RESET *********************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************* HTML **********************/
+
+:root {
+    --white: #F3EFE0;
+    --grey: #434242;
+    --black: #222222;
+    --teal: #22A39F;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box !important;
+    /* border: 1px solid #f00 !important; */
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+/***************** BODY ***********************/
+
+body {
+    background-color: var(--white);
+    width: 100vw;
+    height: 100%;
+}
+
+/*************** HEADER *********************/
+
+#about {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    height: 100vh;
+    text-align: center;
+    color: var(--white);
+}
+
+#profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--teal);
+    margin: 15px auto;
+}
+
+.name {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+.occupation {
+    display: inline;
+    color: var(--teal);
+    font-size: 2.8rem;
+    font-weight: 100;
+    font-style: italic;
+    cursor: default;
+}
+
+.disclaimer {
+    display: block;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+.occupation:hover span {
+    visibility: visible;
+}
+
+.basic, 
+.intermediate,
+.learning {
+    cursor: crosshair;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 1rem 10px;
+}
+
+.basic:hover, 
+.intermediate:hover, .learning:hover,
+.basic:hover ~ .languages .java,
+.intermediate:hover ~ .languages .html,
+.intermediate:hover ~ .languages .css,
+.learning:hover ~ .languages .js,
+.learning:hover ~ .languages .sql,
+.learning:hover ~ .languages .java,
+.learning:hover ~ .languages .python {
+    color: var(--teal);
+}
+
+.languages {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 4rem;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+/********************* NAVBAR **********************/
+
+#navbar {
+    background-color: var(--teal);
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#navbar::before {
+    content: "";
+    background: url("/images/icon.png") no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 15px 3vw;
+}
+
+#navbar a:hover {
+    background-color: var(--grey);
+}
+
+#navbar a:last-of-type {
+    margin-right: 2.5rem;
+}
+
+/********************* MAIN **********************/
+
+.sub-heading-container {
+    grid-column: 1 / -1;
+}
+
+#projects h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 0 2rem;
+    border-bottom: 3px solid var(--black);
+}
+
+#projects {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    color: var(--black);
+    font-size: 1.4rem;
+    text-align: center;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.project-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    border: 2px solid var(--black);
+}
+
+figure img {
+    padding-bottom: 50px;
+}
+
+.project-img {
+    width: 400px;
+}
+
+.project-link {
+    color: var(--black);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: var(--teal);
+}
+
+#contacts, footer {
+    background-color: var(--grey);
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 10vh);
+    font-size: 6rem;
+}
+
+.fa, .fab, .sub-heading {
+    color: var(--white);
+}
+
+.fa:hover, .fab:hover {
+    color: var(--teal);
+} 
+
+/************************** FOOTER ***********************/
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    border-top: 5px dashed var(--teal);
+}
+
+.copy {
+    color: var(--white);
+    font-size: 1.4rem;
+    padding-right: 2.5rem;
+}
+
+/********************* MEDIA QUERY *********************/
+
+/* @media screen and (max-width: 1500px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 2500px) {
+    #projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
