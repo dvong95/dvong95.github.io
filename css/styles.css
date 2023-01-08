@@ -318,7 +318,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 480px), (orientation: landscape) {
+@media handheld and (max-width: 480px), (orientation: landscape) {
 	.basic, .intermediate, .learning,
 	.languages {
 		display: none;
