@@ -301,9 +301,13 @@ footer {
 		display: none;
 	}
 	
+	.project-img {
+		width: 300px;
+	}
+	
 	.project-tile {
-		width: 400px;
-		height: 400px;
+		width: 350px;
+		height: 350px;
 	}
 }
 
