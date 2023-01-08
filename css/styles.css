@@ -355,6 +355,44 @@ footer {
 	}
 }
 
+@media screen and (max-height: 480px; {
+		.basic, .intermediate, .learning,
+	.languages {
+		display: none;
+	}
+	
+	#profile-img {
+		width: 120px;
+		height: 120px;
+	}
+	
+	#navbar::before {
+		display: none;
+	}
+	
+	#projects {
+		padding-bottom: 50px;
+	}
+	
+	#projects h3 {
+		font-size: 3.5rem;
+	}
+	
+	.project-img {
+		width: 200px;
+	}
+	
+	.project-tile {
+		border: none;
+		width: 250px;
+		height: 250px;
+	}
+	
+	#contacts {
+		font-size: 3rem;
+	}
+}
+
 /* @media screen and (max-width: 1500px) {
     #projects {
         grid-template-columns: repeat(2, 1fr);
