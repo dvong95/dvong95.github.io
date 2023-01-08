@@ -60,7 +60,6 @@ table {
 
 *, *::before, *::after {
     box-sizing: border-box !important;
-    /* border: 1px solid #f00 !important; */
 }
 
 html {
@@ -259,6 +258,7 @@ figure img {
 
 #contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     height: calc(100vh - 10vh);
@@ -292,6 +292,17 @@ footer {
 }
 
 /********************* MEDIA QUERY *********************/
+
+@media screen and (max-width: 450px) {
+	.basic, .intermediate, .learning,
+	.languages {
+		display: none;
+	}
+	
+	.project-tiles {
+		width: 400px;
+	}
+}
 
 /* @media screen and (max-width: 1500px) {
     #projects {
