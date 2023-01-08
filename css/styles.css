@@ -137,7 +137,7 @@ body {
 .basic, 
 .intermediate,
 .learning {
-    cursor: crosshair;
+    cursor: default;
     display: inline-block;
     font-size: 2rem;
     margin: 1rem 10px;
@@ -297,10 +297,35 @@ footer {
 
 /********************* MEDIA QUERY *********************/
 
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 50%;
+	}
+	
+	#profile-img {
+		width: 150px;
+		height: 150px;
+	}
+	
+	.project-img {
+		width: 300px;
+	}
+	
+	.project-tile {
+		width: 350px;
+		height: 350px;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.basic, .intermediate, .learning,
 	.languages {
 		display: none;
+	}
+	
+	#profile-img {
+		width: 120px;
+		height: 120px;
 	}
 	
 	.project-img {
