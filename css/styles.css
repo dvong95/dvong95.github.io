@@ -355,7 +355,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape) {
+@media screen and (max-width: 600px) {
 		.basic, .intermediate, .learning,
 	.languages {
 		display: none;
