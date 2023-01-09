@@ -125,7 +125,7 @@ body {
 }
 
 .disclaimer {
-    display: inline-block;
+    display: block;
     font-size: 1.5rem;
     visibility: hidden;
 }
@@ -341,13 +341,13 @@ footer {
 	}
 	
 	.project-img {
-		width: 200px;
+		width: 250px;
 	}
 	
 	.project-tile {
 		border: none;
-		width: 250px;
-		height: 250px;
+		width: 300px;
+		height: 300px;
 	}
 	
 	#contacts {
@@ -379,13 +379,13 @@ footer {
 	}
 	
 	.project-img {
-		width: 200px;
+		width: 250px;
 	}
 	
 	.project-tile {
 		border: none;
-		width: 250px;
-		height: 250px;
+		width: 300px;
+		height: 300px;
 	}
 	
 	#contacts {
