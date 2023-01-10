@@ -307,6 +307,11 @@ footer {
 		height: 150px;
 	}
 	
+	#navbar::before {
+		width: 45px;
+		height: 45px;
+	}
+	
 	.project-img {
 		width: 300px;
 	}
