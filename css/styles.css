@@ -146,6 +146,7 @@ body {
 .basic:hover, 
 .intermediate:hover, .learning:hover,
 .basic:hover ~ .languages .java,
+.basic:hover ~ .languages .js,
 .intermediate:hover ~ .languages .html,
 .intermediate:hover ~ .languages .css,
 .learning:hover ~ .languages .js,
