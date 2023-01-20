@@ -143,8 +143,6 @@ body {
     margin: 1rem 10px;
 }
 
-.basic:hover, 
-.intermediate:hover, .learning:hover,
 .basic:hover ~ .languages .java,
 .basic:hover ~ .languages .js,
 .intermediate:hover ~ .languages .html,
